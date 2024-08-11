@@ -1,0 +1,30 @@
+
+<div id="entrance">
+    <h1>Vous avez quitté le labyrinthe !</h1>
+    <div style="color: yellow; font-size: 32px; font-weight: bolder; margin-top: 5%; ">Félicitations, équipe <span style="background-color: #1f1c32; border: gray 2px solid; border-radius: 5px">{{ equipe.nom }}</span> !
+        <br> Vous terminez le défi avec un total de<br> <span style="background-color: #1f1c32; border: gray 2px solid; border-radius: 5px">{{ equipe.score }} points</span> !
+        <br> Et le défi vous aura pris un total de <span style="background-color: #1f1c32; border: gray 2px solid; border-radius: 5px">{{ time }} minutes</span>.
+    </div>
+    <a href="{% url 'menu' %}"><input type="button" value="QUITTER" style="width: 200px; height: 50px; margin-top: 3%"></a>
+    <br><br>
+    <br><br>
+    <h3 style="margin:auto; width: 80%; color: red; font-size: 24px; font-weight: bolder; background-color: #1f1c32; border: gray 2px solid; border-radius: 5px">Derniers scores</h3>
+    <div id="scores">
+        <br>
+        <table>
+            <tr id="header_list">
+                <td>Equipe</td><td>Date</td>
+                <td>Score</td>
+                <td>Temps de jeu</td></tr>
+            {% for team in all_teams %}
+                <tr class="team">
+                    <td>{{ team.nom }}</td>
+                    <td>le {{ team.heure.day }}.{{ team.heure.month }} à {{ team.heure.hour }}:{{ team.heure.minute }} </td>
+                    <td>{{ team.score }} points</td>
+                    <td>{{ team.time_played }} minute(s)</td>
+                </tr>
+            {% endfor %}
+        </table>
+    <br><br>
+    </div>
+</div>

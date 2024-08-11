@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue !</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script>function preventBack() {window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };</script>
+</head>
+<body>
+    <div id="entrance">
+        <h1>Entrez le nom de l'équipe<br> qui s'apprête à entrer<br> dans le Système.</h1>
+        <form method="POST" action="{% url 'menu' %}">
+            {{ form.as_div }}
+            <br><br>
+            <input type="submit" value="ENTRER" >
+        </form>
+    </div>
+    <div id="help">
+        <a href="{% url 'help' %}">>Instructions<</a>
+    </div>
+
+</body>
+</html>

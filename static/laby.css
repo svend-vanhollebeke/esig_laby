@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url(background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Courier New", serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Courier New", serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: lightskyblue;
+    padding-bottom: 10px;
+    border-bottom: solid grey 3px;
+}
+
+#screen {
+    margin: auto;
+    height: 70%;
+    width: 80%;
+    background-color: #1f1c32;
+    border: 3px grey solid;
+    border-radius: 15px;
+}
+
+#output {
+  width: 80%;
+  height: auto;
+}
+
+#inputs {
+    margin: 5px auto;
+    background-color: #1f1c32;
+    height: 72px;
+    width: 80%;
+    border: 3px grey solid;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.input {
+    padding: 4px;
+    margin: auto 2% auto 2%;
+    height: 62px;
+    width: auto;
+    background-color: white;
+    border: 2px grey solid;
+    border-radius: 15px;
+}
+
+.input:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 15%;
+    height: 120px;
+    width: 300px;
+    font-family: "Courier New", serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: black;
+    text-align: center;
+}
+
+#header_list {
+    align-items: center;
+    font-weight: bolder;
+    color: black;
+    background-color: greenyellow;
+}
+
+.team {
+    color: greenyellow;
+}
+
+#scores {
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    background-color: #1f1c32;
+    border: solid gray 2px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#system {
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+    width: 120px;
+    height: 140px;
+    margin: -25% 45% auto;
+    position: fixed;
+    visibility: hidden;
+}
+
+#system img {
+    width: 100%;
+    height: 100%;
+}

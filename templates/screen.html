@@ -1,0 +1,14 @@
+{% load static %}
+<h1 id="quit">TROUVEZ LES INDICES CACHÉS DANS LE SYSTÈME</h1>
+<div id="screen">
+        <img id="output" src="/static/laby/{{ room.name }}.png" alt="screen">
+</div>
+<div id="system"><img src="{% static 'laby/system.gif' %}" alt="sys"></div>
+<div id="inputs" style="visibility: visible">
+    <img onclick="Left({{ posx }}, {{ posy }})" class="input" src="{% static 'laby/arrow_left.png' %}" alt="left"/>
+    <img onclick="Up({{ posx }}, {{ posy }})" class="input" src="{% static 'laby/arrow_up.png' %}" alt="up"/>
+    <img onclick="Down({{ posx }}, {{ posy }})" class="input" src="{% static 'laby/arrow_down.png' %}" alt="down"/>
+    <img onclick="Right({{ posx }}, {{ posy }})" class="input" src="{% static 'laby/arrow_right.png' %}" alt="right"/>
+</div>
+
+<a href="#" onclick="LoadEnd('d')" style="color: red; text-decoration: none; font-weight: bolder; font-size: larger;">QUITTER</a>

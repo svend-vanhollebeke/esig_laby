@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instructions</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h3 style="color:orange; margin-top: -2%; margin-bottom: 0; font-size: xxx-large">Instructions</h3>
+    <div id="help_content">
+        <div class="content">
+            <h3 style="color:orange; margin-top: -2%; margin-bottom: 0;text-align: center">Suivi :</h3><br>
+            <u>1)</u> Entrez le nom de votre équipe, puis entrez dans le système.<br><br>
+            <u>2)</u> Appuyez sur le bouton <span class="highlighted">Démarrer</span> pour entrer dans le labyrinthe.<br><br>
+            <u>3)</u> Explorez le labyrinthe à la recherche d'indices.<br><br>
+            <u>4)</u> Ne vous laissez pas vaincre par le système !<br><br>
+            <u>5)</u> Pour quitter, trouvez la sortie ou appuyez sur le bouton <span class="highlighted">Quitter</span>.<br><br>
+        </div>
+        <div class="content">
+            <h3 style="color:orange; margin-top: -2%; margin-bottom: 0; text-align: center">Attaques du Système :</h3><br>
+            Pendant votre exploration, <span class="highlighted">le système vous attaquera aléatoirement</span> avec un type d'attaque.<br><br>
+            À vous de contrer son attaque ou de contre-attaquer !<br><br>
+            > Si vous contrez son attaque : <span class="highlighted">rien ne se passera.</span><br>
+            > Tandis que, si vous arrivez à gagner : <span class="highlighted">un point bonus vous sera attribué !</span><br>
+            > Et, évidemment, si le système vous vainc : <span class="highlighted">vous perdrez un point.</span><br>
+        </div>
+        <div class="content">
+            <h3 style="color:orange; margin-top: -2%; margin-bottom: 0;text-align: center">Les indices et la sortie :</h3><br>
+            Il y a un total de <span class="highlighted">16 indices</span> dans l'ensemble du labyrinthe !<br>
+            Ils sont tous représentés par <span class="highlighted">un coffre</span> comme celui-ci :<br>
+            <img style="width: 48px; height: 48px; margin-left: 45%;" src="{% static 'laby/chest.png' %}" alt="chest"><br>
+            et se trouvent dans des impasses.<br><br>
+            Vous pouvez consulter l'indice autant de fois que souhaité, il vous suffit de quitter la pièce et d'y retourner.<br><br>
+            La <span class="highlighted">porte de sortie</span> ressemble à ceci :<br>
+            <img style="width: 64px; height: 64px; margin-left: 45%;" src="{% static 'laby/exit.png' %}" alt="exit"><br>
+            Une fois traversée, vous quitterez le labyrinthe <span style="font-size: initial">(comme si vous aviez appuyé sur le bouton Quitter)</span>,
+            alors <span class="highlighted">réfléchissez bien</span> avant de franchir cette porte !
+
+        </div>
+    </div>
+    <a href="{% url 'menu' %}">Retour</a>
+</body>
+</html>

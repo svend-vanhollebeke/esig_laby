@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 5% auto;
+    text-align: center;
+    background-image: url(background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Courier New", serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Courier New", serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: lightskyblue;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: solid grey 3px;
+}
+
+#entrance {
+    padding: 20px 0 20px 0;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    background-color: #1f1c32;
+    border: 3px grey solid;
+    border-radius: 15px;
+}
+
+label, input {
+    font-family: "Courier New", serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: lightskyblue;
+    text-align: center;
+}
+
+input {
+    color: #1f1c32;
+}
+
+a, a:visited {
+    font-size: 32px;
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #1f1c32;
+    border: 3px grey solid;
+    border-radius: 5px;
+}
+
+#help {
+    margin-top: 5%;
+}
+
+#help_content {
+    height: 80%;
+    width: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#help_content div {
+    width: 45%;
+    height: 90%;
+    margin: 10px;
+    border: grey solid 3px;
+    border-radius: 10px;
+    background-color: lightslategray;
+}
+
+.content {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.highlighted {
+   color: darkred;
+}

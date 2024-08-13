@@ -38,7 +38,7 @@ function LoadLaby(x,y,dir){
             if (noClue === 0){
                 alert('Indice no 1 !\n\n [⊚ : C:\\-\\-\\-\\-\\-]');
             } else if (noClue === 1){
-                alert('Indice no 2 !\n\n [⊡ : -- --1 1-]');
+                alert('Indice no 2 !\n\n [⊡ : -- --5 1-]');
             } else if (noClue === 2){
                 alert('Indice no 3 !\n\n [∆ : ----e ---]');
             } else if (noClue === 3){
@@ -54,7 +54,7 @@ function LoadLaby(x,y,dir){
             } else if (noClue === 8){
                 alert('Indice no 9 !\n\n [∆ : ----- --1]');
             } else if (noClue === 9){
-                alert('Indice no 10 !\n\n [∆ : ----- 31-]');
+                alert('Indice no 10 !\n\n [∆ : ----- 30-]');
             } else if (noClue === 10){
                 alert('Indice no 11 !\n\n [⊡ : -- --- -5]');
             } else if (noClue === 11){

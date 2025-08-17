@@ -1,36 +1,42 @@
 const grille = [
-          [0 , 0 , 0 , 12, 0 , 3 , 15, 4 , 0 , 12, 0 , 0 , 0 , 0 ],
-          [0 , 3 , 15, 9 , 0 , 14, 0 , 14, 0 , 7 , 15, 4 , 0 , 12],
-          [0 , 14, 0 , 2 , 15, 5 , 0 , 2 , 15, 9 , 0 , 7 , 15, 5 ],
-          [11, 6 , 4 , 0 , 0 , 0 , 0 , 0 , 0 , 14, 0 , 14, 0 , 0 ],
-          [0 , 0 , 14, 0 , 11, 4 , 0 , 0 , 3 , 6 , 15, 5 , 0 , 0 ],
-          [3 , 15, 9 , 0 , 0 , 7 , 4 , 0 , 14, 0 , 0 , 0 , 0 , 12],
-          [14, 0 , 2 , 8 , 15, 6 , 1 , 15, 6 , 8 , 15, 4 , 0 , 14],
-          [14, 0 , 0 , 14, 0 , 0 , 14, 0 , 0 , 14, 0 , 14, 0 , 14],
-          [2 , 4 , 0 , 7 , 13, 0 , 2 , 8 , 15, 5 , 0 , 2 , 15, 9 ],
-          [0 , 7 , 15, 9 , 0 , 0 , 0 , 14, 0 , 0 , 12, 0 , 0 , 14],
-          [0 , 10, 0 , 2 , 8 , 15, 15, 6 , 15, 8 , 6 , 15, 8 , 5 ],
-          [0 , 0 , 0 , 0 , 14, 0 , 0 , 0 , 0 , 14, 0 , 0 , 14, 0 ],
-          [0 , 3 , 15, 8 , 6 , 4 , 0 , 11, 8 , 5 , 0 , 3 , 1 , 13],
-          [0 , 14, 0 , 10, 0 , 14, 0 , 0 , 14, 0 , 3 , 6 , 5 , 0 ],
-          [0 , 2 , 4 , 0 , 3 , 5 , 0 , 0 , 2 , 15, 9 , 0 , 0 , 0 ],
-          [0 , 0 , 14, 0 , 14, 0 , 0 , 0 , 0 , 0 , 2 , 4 , 0 , 0 ],
-          [0 , 0 , 7 , 15, 1 , 15, 15, 4 , 0 , 12, 0 , 7 , 13, 0 ],
-          [16, 15, 9 , 0 , 14, 0 , 0 , 2 , 15, 6 , 15, 5 , 0 , 0 ],
-          [99, 0 , 7 , 15, 9 , 0 , 12, 0 , 0 , 0 , 0 , 0 , 0 , 0 ],
-          [0 , 0 , 10, 0 , 2 , 15, 5 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ]]
+  [0 , 3 , 8 , 15, 8 , 15, 8 , 15, 15, 15, 15, 4 , 0 , 0 ],
+  [3 , 1 , 5 , 0 , 10, 0 , 14, 0 , 0 , 0 , 0 , 7 , 4 , 0 ],
+  [7 , 5 , 0 , 0 , 0 , 3 , 6 , 13, 0 , 98, 15, 1 , 6 , 4 ],
+  [14, 0 , 0 , 0 , 0 , 14, 0 , 0 , 0 , 99, 0 , 14, 0 , 14],
+  [7 , 15, 8 , 13, 0 , 2 , 4 , 0 , 0 , 0 , 3 , 9 , 0 , 14],
+  [14, 0 , 14, 0 , 0 , 0 , 14, 0 , 12, 0 , 7 , 6 , 15, 9 ],
+  [14, 0 , 2 , 15, 8 , 15, 1 , 15, 9 , 0 , 14, 0 , 0 , 10],
+  [2 , 4 , 0 , 0 , 14, 0 , 14, 0 , 7 , 15, 1 , 4 , 0 , 0 ],
+  [0 , 7 , 15, 8 , 5 , 0 , 7 , 15, 5 , 0 , 7 , 6 , 4 , 0 ],
+  [0 , 14, 0 , 10, 0 , 11, 9 , 0 , 0 , 0 , 14, 0 , 7 , 13],
+  [0 , 14, 0 , 0 , 0 , 0 , 2 , 15, 8 , 15, 6 , 15, 9 , 0 ],
+  [11, 6 , 4 , 0 , 12, 0 , 0 , 0 , 14, 0 , 0 , 0 , 14, 0 ],
+  [0 , 0 , 14, 0 , 2 , 8 , 15, 15, 9 , 0 , 17 , 0 , 14, 0 ],
+  [3 , 15, 9 , 0 , 0 , 14, 0 , 0 , 10, 0 , 7 , 15, 5 , 0 ],
+  [14, 0 , 10, 0 , 0 , 14, 0 , 12, 0 , 0 , 14, 0 , 0 , 0 ],
+  [2 , 4 , 0 , 0 , 3 , 6 , 8 , 5 , 0 , 0 , 14, 0 , 0 , 0 ],
+  [0 , 7 , 15, 15, 9 , 0 , 14, 0 , 3 , 15, 6 , 15, 4 , 0 ],
+  [0 , 14, 0 , 0 , 14, 0 , 2 , 8 , 5 , 0 , 0 , 0 , 7 , 13],
+  [0 , 7 , 15, 15, 5 , 0 , 0 , 14, 0 , 12, 0 , 3 , 5 , 0 ],
+  [11, 5 , 0 , 0 , 0 , 0 , 0 , 2 , 15, 6 , 15, 5 , 0 , 0 ]
+];
 
 const indices = [
-    [3, 0], [9, 0], [13, 1], [0, 3],
-    [4, 4], [13, 5], [4, 8], [10, 9],
-    [1, 10], [7, 12], [13, 12], [3, 13],
-    [9, 16], [12, 16], [6, 18], [2, 19]
+    [4, 1], [7, 2], [3, 4], [8, 5],
+    [13, 6], [3, 9], [5, 9], [13, 9],
+    [0, 11], [4, 11], [8, 13], [2, 14],
+    [7, 14], [13, 17], [9, 18], [0, 19],
+    [10, 12], [9, 2]
 ];
 
 let score_equipe = 0;
+let has_key = false;
 
 function LoadLaby(x,y,dir){
     let element = grille[y][x];
+    if ((x===9 && y===2) && has_key){
+        element = 16;
+    }
     $('body').load('/load_room/' + element + "/" + dir + "/" + score_equipe);
     if (CheckIfClue(x,y)){
         setTimeout(function (){
@@ -42,7 +48,7 @@ function LoadLaby(x,y,dir){
             } else if (noClue === 2){
                 alert('Indice no 3 !\n\n [∆ : ----e ---]');
             } else if (noClue === 3){
-                alert('Indice no 4 !\n\n [⊚ : -\\-\\-\\-\\-\\Magenta]');
+                alert('Indice no 4 !\n\n [⊚ : -\\-\\-\\-\\-\\SERVER]');
             } else if (noClue === 4){
                 alert('Indice no 5 !\n\n [⊚ : -\\ESIGUsers\\-\\-\\-\\-]');
             } else if (noClue === 5){
@@ -50,23 +56,29 @@ function LoadLaby(x,y,dir){
             } else if (noClue === 6){
                 alert('Indice no 7 !\n\n [⊡ : P- --- --]');
             } else if (noClue === 7){
-                alert('Indice no 8 !\n\n [⊚ : -\\-\\KEY\\-\\-\\-]');
+                alert('Indice no 8 !\n\n [⊚ : -\\-\\URL\\-\\-\\-]');
             } else if (noClue === 8){
                 alert('Indice no 9 !\n\n [∆ : ----- --1]');
             } else if (noClue === 9){
-                alert('Indice no 10 !\n\n [∆ : ----- 30-]');
+                alert('Indice no 10 !\n\n [∆ : ----- 3-]');
             } else if (noClue === 10){
-                alert('Indice no 11 !\n\n [⊡ : -- --- -5]');
+                alert('Indice no 11 !\n\n [⊡ : -- --- -2]');
             } else if (noClue === 11){
                 alert('Indice no 12 !\n\n [⊡ : -C --- --]');
             } else if (noClue === 12){
-                alert('Indice no 13 !\n\n [⊚ : -\\-\\-\\Chromatic\\-\\-]');
+                alert('Indice no 13 !\n\n [⊚ : -\\-\\-\\ROUTER\\-\\-]');
             } else if (noClue === 13){
                 alert('Indice no 14 !\n\n [∆ : sa--- ---]');
             } else if (noClue === 14){
-                alert('Indice no 15 !\n\n [⊚ : -\\-\\-\\-\\Poseidon\\-]');
+                alert('Indice no 15 !\n\n [⊚ : -\\-\\-\\-\\LOGIN\\-]');
             } else if (noClue === 15){
                 alert('Indice no 16 !\n\n [⊡ : -- 31- --]');
+            } else if (noClue === 16){
+                alert('Clé trouvée !\n\n Elle ouvre forcément une porte...');
+            } else if (noClue === 17){
+                if (!has_key) {
+                    alert('La porte est verrouillée, il faudrait trouver la clé.');
+                }
             }
         }, 500)
     } else {
@@ -145,6 +157,10 @@ function Right(x,y){
 
 function CheckIfNotVoid(x,y){
     try {
+    if ((x===9 && y===3) && (!has_key)) {
+        alert("La porte est verrouillée !");
+        return false;
+    }
     if (grille[y][x] === 0){
         alert("Impossible d'aller par là !");
         return false;
@@ -158,8 +174,11 @@ function CheckIfNotVoid(x,y){
 }
 
 function CheckIfClue(x,y){
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 18; i++) {
         if (JSON.stringify(indices[i]) === JSON.stringify([x,y])){
+            if (JSON.stringify(indices[i]) === JSON.stringify([10, 12])){
+                has_key = true;
+            }
             return true;
         }
     }
